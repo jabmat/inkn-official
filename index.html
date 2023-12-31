@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inkn</title>
+    <link href="./src/assets/styles/style.css" rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div class="header-one">
+            <img src="./src/assets/images/avatar-black-fit-cropped-100.png" alt="company's logo" />
+            <div>
+                <button>PL</button>
+                <button>EN</button>
+            </div>
+        </div>
+        <div class="header-two">
+            <h1>Projektujemy.</h1>
+            <div>
+                <h2 class="category-title">Twój budynek.</h2>
+                <span class="div-mark">|</span>
+                <h2 class="category-title">Twoja strona.</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <picture class="main-background">
+            <source media="(max-width:520px)" srcset="./src/assets/images/bg-header-cropped-600.webp 800w"
+                alt="office's workspace">
+            <source media="(min-width:521px)" srcset="./src/assets/images/bg-header-cropped-600.webp 2000w"
+                alt="office's workspace">
+            <img src="./src/assets/images/bg-header-cropped-600.webp" width="2000" height="600" alt="office's workspace"
+                loading="eager" />
+        </picture>
+        <section class="wrapper-work">
+            <article class="work-container structural">
+                <h2 class="work-title">Konstrukcje budowlane.</h2>
+                <div class="text-container">
+                    <p class="work-text">
+                        Obliczenia. Modelowanie 3D. Rysunki.
+                    </p>
+                </div>
+            </article>
+            <article class="work-container front-end">
+                <h2 class="work-title">Front-end development.</h2>
+                <div class="text-container">
+                    <p class="work-text">
+                        Mockup. Programowanie. Deploy. Mockup.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
