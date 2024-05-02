@@ -7,25 +7,32 @@
     <title>Inkn</title>
     <link href="./src/assets/styles/style.css" rel='stylesheet'>
     <link href="./src/assets/icomoon/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=VT323&display=swap"
+        rel="stylesheet">
+
+
 </head>
 
 <body>
     <header>
         <div class="header-one">
             <img src="./src/assets/images/avatar-black-fit-cropped-100.png" alt="company's logo" />
-            <div>
+            <!-- <div class="language-handler-container">
                 <button>PL</button>
                 <button>EN</button>
-            </div>
+            </div> -->
         </div>
         <div class="header-two">
-            <h1>Projektujemy.</h1>
+            <h1 class="libre-caslon-text-regular">Projektujemy.</h1>
             <div>
                 <span class="category-title">
-                    <a>Twój budynek.</a>
+                    Twój budynek.
                 </span>
                 <span class="category-title">
-                    <a>Twoja strona.</a>
+                    Twoje miejsce.
                 </span>
             </div>
         </div>
@@ -39,6 +46,7 @@
             <img src="./src/assets/images/bg-header-cropped-600.webp" width="2000" height="600" alt="office's workspace"
                 loading="eager" />
         </picture>
+        <span class="work-sect">Usługi</span>
         <section class="wrapper-work">
             <article class="work-container structural">
                 <h2 class="work-title">Konstrukcje budowlane.</h2>
@@ -47,28 +55,28 @@
                         Obliczenia. Modelowanie 3D. Rysunki.
                     </h3>
                     <div class="work-cta work-text">
-                        <a class="cta-link">
-                            Dowiedz się więcej
-                        </a>
-                        <a class='cta-link' href="mailto: inkn.b2c@gmail.com">
-                            Napisz do mnie
-                        </a>
+                        <span>
+                            Chcesz wiedzieć więcej?
+                            <a href="mailto: inkn.b2c@gmail.com">
+                                Zapytaj!
+                            </a>
+                        </span>
                     </div>
                 </div>
             </article>
-            <article class="work-container front-end">
+            <!-- <article class="work-container front-end">
                 <h2 class="work-title">Front-end development.</h2>
                 <div class="work-content">
                     <h3 class="work-subtitle work-text">
                         Mockup. Programowanie. Deploy.
                     </h3>
                 </div>
-            </article>
+            </article> -->
 
         </section>
     </main>
     <footer>
-        <span>Followuj</span>
+        <span class="footer-sect">Followuj</span>
         <div class="footer-social">
             <div class="social-icons-wrapper">
                 <a href="" target="_blank" aria-label="visit our facebook">
@@ -79,12 +87,15 @@
                 </a>
             </div>
             <div class="social-mail-wrapper">
-                <a href="">
-                    inkn.b2c@gmail.com
-                </a>
+                <div class="social-mail-box">
+                    <a href="mailto: inkn.b2c@gmail.com">
+                        inkn.b2c@gmail.com
+                    </a>
+                    <span>&#169 INKN 2024</span>
+                </div>
             </div>
             <div class="social-icons-wrapper">
-                <div class="social-icons-wrapper">
+                <!-- <div class="social-icons-wrapper">
                     <a href="" target="_blank" aria-label="visit our facebook">
                         <i class="icon-facebook2 icon-social"></i>
                     </a>
@@ -94,7 +105,7 @@
                     <a href="" target="_blank" aria-label="visit our facebook">
                         <i class="icon-facebook2 icon-social"></i>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>

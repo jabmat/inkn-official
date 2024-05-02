@@ -1,6 +1,26 @@
 body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	margin: 0 auto;
+	font-family: 'Archivo Narrow', sans-serif;
 }
+
+.vt323-regular {
+	font-family: 'VT323', monospace;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 400 to 700 */
+
+/* .archivo-narrow-standard {
+  font-family: "Archivo Narrow", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
 
 header div {
 	display: flex;
@@ -12,7 +32,7 @@ header div h1 {
 
 .header-one {
 	justify-content: space-between;
-	margin: 10px 10px;
+	margin: 10px 10px 10px 10px;
 }
 
 .header-two {
@@ -44,13 +64,19 @@ header div h1 {
 }
 
 .wrapper-work {
-	max-width: 1200px;
-	margin: 0 auto;
+	margin: auto 10px;
+}
+
+.work-sect,
+.footer-sect {
+	display: inline-block;
+}
+.work-sect {
+	padding: 25px 0 0 10px;
 }
 
 .work-title {
-	color: #fff;
-	margin: 25px 0px 10px 0px;
+	margin: 15px 0px 10px 0px;
 }
 
 .work-subtitle {
@@ -61,20 +87,11 @@ header div h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 10px auto;
-}
-
-.structural {
-	background-image: url(../images/bg-header-cropped-2000.jpeg);
-}
-.front-end {
-	background-image: url(../images/bg-header-cropped-2000.jpeg);
 }
 
 .work-content {
 	width: 80%;
 	max-width: 800px;
-	color: #fff;
 }
 
 .work-text {
@@ -82,7 +99,7 @@ header div h1 {
 }
 
 .work-text:last-child {
-	margin: 0 0 25px 0;
+	margin: 0 0 15px 0;
 }
 
 .work-cta {
@@ -90,34 +107,31 @@ header div h1 {
 	justify-content: center;
 }
 
-.cta-link {
-	margin-right: 10px;
-}
-
-.cta-link:last-of-type {
-	margin-right: 0px;
-}
-
 .icon-social {
 	font-size: 30px;
 }
 
 footer {
-	padding: 10px;
+	padding: 75px 10px 10px 10px;
+	margin-top: auto;
 }
 
-footer a:link {
+a {
 	text-decoration: none;
+	color: #000000;
+}
+
+main a:hover,
+.social-mail-wrapper a:hover {
+	text-decoration: none;
+	color: #000000;
+	transition: opacity 0.5s;
+	opacity: 0.5;
 }
 
 .social-icons-wrapper a:hover {
 	transition: transform 0.3s;
 	transform: scale(1.1, 1.1);
-}
-
-.social-mail-wrapper a:hover {
-	transition: opacity 0.5s;
-	opacity: 0.5;
 }
 
 .social-icons-wrapper {
@@ -126,17 +140,24 @@ footer a:link {
 
 footer div {
 	display: flex;
+	flex: 1;
 }
 
-.footer-social div {
-	flex: 1;
+.footer-social,
+.work-container {
+	border-top: 1px solid lightgrey;
+	padding: 10px 0 0 0;
 }
 
 .social-mail-wrapper {
 	justify-content: center;
 }
 
+.social-mail-box {
+	flex-direction: column;
+	align-items: center;
+}
+
 .footer-social div:last-of-type {
 	justify-content: flex-end;
 }
-
