@@ -15,10 +15,25 @@ body {
 /* <uniquifier>: Use a unique and descriptive class name */
 /* <weight>: Use a value from 400 to 700 */
 
+/* .archivo-<uniquifier> {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
 /* .archivo-narrow-standard {
   font-family: "Archivo Narrow", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* .archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
   font-style: normal;
 } */
 
@@ -28,6 +43,7 @@ header div {
 
 header div h1 {
 	margin: 20px auto;
+	border-bottom: 1px solid lightgrey;
 }
 
 .header-one {
@@ -41,8 +57,30 @@ header div h1 {
 	margin: 0 0 20px 0;
 }
 
+.logo-start-title {
+	font-family: 'Archivo', sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 1px solid #a6a6a6;
+}
+
+.logo-start-subtitle {
+	font-family: 'Archivo', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	padding-top: 5px;
+	letter-spacing: 1.5px;
+	/* text-transform: uppercase; */
+}
+
+/* img.header-logo {
+	width: 100px;
+	height: auto;
+} */
+
 .category-title {
-	border-right: 1px solid;
+	border-right: 1px solid #a6a6a6;
 	padding-right: 10px;
 	margin-right: 10px;
 }
@@ -121,6 +159,7 @@ a {
 	color: #000000;
 }
 
+header a:hover,
 main a:hover,
 .social-mail-wrapper a:hover {
 	text-decoration: none;
