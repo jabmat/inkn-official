@@ -153,7 +153,8 @@ h3.work-subtitle {
 
 .work-cta {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	width: 100%;
 	margin: 20px 0 0 0;
 }
@@ -162,8 +163,12 @@ h3.work-subtitle {
 	font-size: 20px;
 }
 
-.work-cta span a {
+.work-cta-mail {
 	text-decoration: underline;
+}
+
+.work-cta-tel {
+	font-size: 24px;
 }
 
 .work-cta span a:hover {
@@ -312,6 +317,10 @@ footer div {
 	.work-sect,
 	.footer-sect {
 		font-size: 16px;
+	}
+
+	.work-cta-tel {
+		font-size: 22px;
 	}
 
 	.copyrights {
