@@ -274,6 +274,43 @@ footer div {
 	padding-right: 0px;
 }
 
+.gallery-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.column {
+	/* The column is now a simple container for the image-box */
+	/* Flexbox on the parent wrapper handles the layout. */
+}
+
+.image-box {
+	width: 320px;
+	height: 240px;
+	padding: 15px;
+	background-color: #fdfdff;
+	border: 3px solid #a9a9a9;
+	box-shadow: 3px 7px 5px #808080;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+}
+
+.image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
 /* @media (min-width: 1600px) {
 	.main-background img {
 		width: 50%;
@@ -329,5 +366,22 @@ footer div {
 
 	.copyrights span:nth-child(2) {
 		font-size: 14px;
+	}
+
+	.column {
+		/* On mobile, each column takes full width to center the box */
+		flex: 1 1 100%;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 10px;
+	}
+
+	.image-box {
+		width: 280px;
+		height: 210px;
+	}
+
+	.gallery-wrapper {
+		gap: 10px;
 	}
 }
